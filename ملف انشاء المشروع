@@ -1,0 +1,24 @@
+1- npx create-vite@latest . --template react  ---اول حاجه 
+2- npm install
+3- app.css حذف ملف
+4- index.css حذف محتويات هذا الملف
+5- app.jsx حذف محتويات هذا الملف ووضع مايلي: rfce 
+
+-----tailwindcss تسطيب الـ--------
+1- npm install tailwindcss @tailwindcss/vite 
+2- vite.config تظبيط الاستخدام في ملف ال 
+3- @import "tailwindcss"; اضافة هذا في ملف ال  css
+4- css اضافة المتغيرات في ملف  ال 
+
+
+----------------------
+-- assets اضافة الصور داخل ملف ال 
+
+1- components انشاء فولدر ال
+- navbar انشاء صفحة ------
+- Hero انشاء صفحةال
+- services انشاء صفحةال
+   - icons اضافة مكتبة ال
+   ---- npm i react-icons
+- Banner انشاء صفحةال
+-footer انشاء صفحةال
