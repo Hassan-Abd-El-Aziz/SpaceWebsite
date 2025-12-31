@@ -40,6 +40,8 @@ const Services = () => {
           >
             {ServicesDate.map((data) => (
               <div
+                data-aos="fade-up"
+                data-aos-delay={data.aosDelay}
                 className="min-h-[180px] flex flex-col justify-center gap-2
               items-center rounded-xl
                bg-sky-900/60 backdrop-blur-sm 
@@ -53,6 +55,7 @@ const Services = () => {
             ))}
           </div>
           <img
+            data-aos="fade-up"
             src={wave}
             alt=""
             className="h-[150px] w-full object-cover 

@@ -10,15 +10,28 @@ const Banner = () => {
         sm:grid-cols-2 gap-4 items-center"
         >
           <div>
-            <img src={sateliteImg} alt="" />
+            <img
+              data-aos="zoom-in"
+              src={sateliteImg}
+              alt=""
+              className="w-full sm:w-[80%] mx-auto max-h-[350px] object-cover"
+            />
           </div>
           <div
             className="space-y-3 xl:pr-36 p-4 border-r-2 border-b-2
            border-r-green-800 border-b-green-800"
           >
-            <p className="text-green-600 uppercase">Our Mission</p>
-            <h1 className="uppercase text-5xl">Repidcast</h1>
-            <p>
+            <p data-aos="fade-up" className="text-green-600 uppercase">
+              Our Mission
+            </p>
+            <h1
+              data-aos="fade-up"
+              data-aos-delay="300"
+              className="uppercase text-5xl"
+            >
+              Repidcast
+            </h1>
+            <p data-aos="fade-up" data-aos-delay="500">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Excepturi delectus saepe dignissimos corporis veniam fugiat
               molestiae dolore voluptatem reiciendis, accusantium vel laboriosam
@@ -27,7 +40,13 @@ const Banner = () => {
               libero in illo porro. Assumenda eveniet doloribus delectus
               voluptatibus porro quaerat.
             </p>
-            <button className="primary-button">Learn More</button>
+            <button
+              data-aos="fade-up"
+              data-aos-delay="700"
+              className="primary-button"
+            >
+              Learn More
+            </button>
           </div>
         </div>
       </div>
