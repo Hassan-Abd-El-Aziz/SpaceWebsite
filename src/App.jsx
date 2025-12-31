@@ -9,6 +9,10 @@ import Footer from "./components/Footer/Footer";
 
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
+import Banner3 from "./components/Banner/Banner3";
+import Banner4 from "./components/Banner/Banner4";
+import Testimonials from "./components/Testimonials/Testimonials";
+
 const App = () => {
   React.useEffect(() => {
     AOS.init({ duration: 1200, easing: "ease-in-out" });
@@ -28,9 +32,14 @@ const App = () => {
         <Hero />
       </div>
       {/* Services card section */}
+
       <Services />
+
       <Banner />
       <Banner2 />
+      <Banner3 />
+      <Banner4 />
+      <Testimonials />
       <Footer />
     </div>
   );

@@ -1,8 +1,9 @@
 import React from "react";
 import { FaReact } from "react-icons/fa";
-
+import LogoSection from "../../components/LogoSec/LogoSection";
 import { FaShuttleSpace, FaSpaceAwesome } from "react-icons/fa6";
 import wave from "../../assets/wave.gif";
+import TitleHeader from "../TitleHeader";
 const ServicesDate = [
   {
     title: "HST",
@@ -31,8 +32,9 @@ const ServicesDate = [
 ];
 const Services = () => {
   return (
-    <div className="bg-black text-white relative z-50">
-      <div className="container my-0 mx-auto">
+    <div id="services" className="bg-black text-white relative z-50">
+      <TitleHeader title="Our Services " sub="⭐ Services" />
+      <div className="container my-2 mx-auto">
         <div className="min-h-[400px]">
           <div
             className="grid grid-cols-1 sm:grid-cols-3 gap-6 relative
@@ -62,6 +64,7 @@ const Services = () => {
           mix-blend-screen-translate-y-24 relative z-0"
           />
         </div>
+        <LogoSection />
       </div>
     </div>
   );

@@ -1,11 +1,17 @@
 @import "tailwindcss";
-
+html {
+  scroll-behavior: smooth;
+}
 @theme {
   --container-center: true;
   --padding-default: 1rem;
   --padding-sm: 2rem;
 }
-
+@layer utilities {
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+}
 @layer components {
   .primary-button {
     @apply bg-green-800
@@ -13,4 +19,114 @@
       hover:bg-green-400  hover:font-bold transition-colors 
       duration-200 ease-in-out hover:text-black;
   }
+  .gradient-edge {
+    @apply w-36 h-full absolute bottom-0 z-20;
+  }
+  .marquee-item {
+    @apply md:w-40 w-32;
+  }
+  .section-padding {
+    @apply px-5 md:px-10 md:mt-3 mt-2;
+  }
+  .card-border {
+    @apply border border-green-800 bg-green-900/25;
+  }
+  .hero-badge {
+    @apply bg-green-800 py-2 px-4 rounded-full w-fit text-sm md:text-base text-nowrap;
+  }
+}
+
+.gradient-edge:nth-of-type(1) {
+  left: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+.gradient-edge:nth-of-type(2) {
+  right: 0;
+  background: linear-gradient(
+    -90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+/* marquee */
+.marquee {
+  width: 100dvw;
+  overflow: hidden;
+  position: relative;
+}
+.marquee-box {
+  display: flex;
+  align-items: center;
+  width: 200%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  animation: marquee 60s linear infinite;
+}
+.marquee-item {
+  float: left;
+}
+@keyframes marquee {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -100%;
+  }
+}
+/* marquee end */
+
+.card {
+  --start: 0;
+  position: relative;
+  z-index: 40;
+  overflow: hidden;
+  transition: border-color 1s ease-in-out;
+}
+
+.card::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 12px;
+  border: 2px solid transparent;
+  background: var(--gradient);
+  background-attachment: fixed;
+  mask: linear-gradient(#0000, #0000),
+    conic-gradient(
+      from calc((var(--start) - 15) * 1deg),
+      #ffffff1f 0deg,
+      white,
+      #ffffff00 100deg
+    );
+  mask-composite: intersect;
+  mask-clip: padding-box, border-box;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.glow {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(10px);
+  filter: saturate(200);
+}
+
+.card:hover::before {
+  opacity: 1;
 }

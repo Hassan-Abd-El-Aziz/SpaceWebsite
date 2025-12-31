@@ -3,7 +3,7 @@ import MountainPng from "../../assets/moon surface.png";
 
 const Hero = () => {
   return (
-    <div className="bg-black/20 h-full text-white relative z-50">
+    <div id="hero" className="bg-black/20 h-full text-white relative z-50">
       <div className="h-full flex justify-center items-center p-4">
         <div className="container grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div className="space-y-4 lg:pr-36">
@@ -14,13 +14,14 @@ const Hero = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos
               laboriosam libero sequi minus, ullam soluta!
             </p>
-            <button
+            <a
               data-aos="fade-up"
               data-aos-delay="500"
               className="primary-button"
+              href="#services"
             >
-              Learn More
-            </button>
+              See More
+            </a>
           </div>
           <div></div>
         </div>

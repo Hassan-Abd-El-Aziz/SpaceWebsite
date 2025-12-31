@@ -1,12 +1,10 @@
 import React from "react";
 import sateliteImg from "../../assets/satalite1.jpg";
-import TitleHeader from "../TitleHeader";
 
 const Banner = () => {
   return (
-    <div id="mission" className="bg-black text-white pb-12 relative z-50 ">
-      <TitleHeader title="Mission? " sub="⭐ Our Mission" />
-      <div className="container mx-auto my-5">
+    <div className="bg-black text-white pb-12 relative z-50">
+      <div className="container mx-auto my-0">
         <div
           className="grid grid-cols-1 
         sm:grid-cols-2 gap-4 items-center"
