@@ -36,17 +36,23 @@ const Footer = () => {
               <div className="py-8 px-4">
                 <h1 className="text-xl font-bold mb-3">Important Links</h1>
                 <ul className="flex flex-col gap-3">
-                  <li>
-                    <a href="#">Home</a>
+                  <li
+                    className="text-white hover:text-green-400 hover:pl-1
+               transition-all duration-400 ease-in-out"
+                  >
+                    <a href="#services">Services</a>
                   </li>
-                  <li>
-                    <a href="#">About</a>
+                  <li
+                    className="text-white hover:text-green-400 hover:pl-1
+               transition-all duration-400 ease-in-out"
+                  >
+                    <a href="#mission">Mission</a>
                   </li>
-                  <li>
-                    <a href="#">Services</a>
-                  </li>
-                  <li>
-                    <a href="#">Login</a>
+                  <li
+                    className="text-white hover:text-green-400 hover:pl-1
+               transition-all duration-400 ease-in-out"
+                  >
+                    <a href="#testimonials">Testimonials</a>
                   </li>
                 </ul>
               </div>
@@ -56,17 +62,29 @@ const Footer = () => {
               <div className="py-8 px-4">
                 <h1 className="text-xl font-bold mb-3">Links</h1>
                 <ul className="flex flex-col gap-3">
-                  <li>
-                    <a href="#">Home</a>
+                  <li
+                    className="text-white hover:text-green-400 hover:pl-1
+               transition-all duration-400 ease-in-out"
+                  >
+                    <a href="#hero">Home</a>
                   </li>
-                  <li>
-                    <a href="#">About</a>
+                  <li
+                    className="text-white hover:text-green-400 hover:pl-1
+               transition-all duration-400 ease-in-out"
+                  >
+                    <a href="#services">Services</a>
                   </li>
-                  <li>
-                    <a href="#">Services</a>
+                  <li
+                    className="text-white hover:text-green-400 hover:pl-1
+               transition-all duration-400 ease-in-out"
+                  >
+                    <a href="#mission">Mission</a>
                   </li>
-                  <li>
-                    <a href="#">Login</a>
+                  <li
+                    className="text-white hover:text-green-400 hover:pl-1
+               transition-all duration-400 ease-in-out"
+                  >
+                    <a href="#testimonials">Testimonials</a>
                   </li>
                 </ul>
               </div>
@@ -87,7 +105,12 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center gap-2">
                   <MdCall />
-                  <p>+2 01009039628 </p>
+                  <p
+                    className="text-white hover:text-green-400 hover:pl-1
+               transition-all duration-400 ease-in-out cursor-pointer"
+                  >
+                    <a href="tel:+201009039628">01009039628</a>
+                  </p>
                 </div>
               </div>
             </div>

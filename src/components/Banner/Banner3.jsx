@@ -1,7 +1,7 @@
 import React from "react";
 import sateliteImg from "../../assets/satalite1.jpg";
 
-const Banner = () => {
+const Banner3 = () => {
   return (
     <div className="bg-black text-white pb-12 relative z-50">
       <div className="container mx-auto my-0">
@@ -54,4 +54,4 @@ const Banner = () => {
   );
 };
 
-export default Banner;
+export default Banner3;
